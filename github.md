@@ -88,7 +88,7 @@ Oraclize Query
 ```
 html(https://github.com/anakornk).xpath((//*[contains(@class,'Counter')])[2]/text())
 ```
-### 1. Followers Count
+### 3. Followers Count
 URL: `https://github.com/${USERNAME}`  
 EXAMPLE URL: https://github.com/anakornk
 
