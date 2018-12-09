@@ -3,7 +3,7 @@
 ## Repo
 
 ### 1. Watch
-URL: `https://www.github.com/${USERNAME}/{REPO}`  
+URL: `https://www.github.com/${USERNAME}/${REPO}`  
 EXAMPLE URL: https://github.com/w3c/websub
 
 XPATH
@@ -15,7 +15,7 @@ Oraclize Query
 html(https://github.com/w3c/websub).xpath((//a[contains(@class,'social-count')])[1]/text())
 ```
 ### 2. Star
-URL: `https://www.github.com/${USERNAME}/{REPO}`  
+URL: `https://www.github.com/${USERNAME}/${REPO}`  
 EXAMPLE URL: https://github.com/w3c/websub
 
 XPATH 
@@ -27,7 +27,7 @@ Oraclize Query
 html(https://github.com/w3c/websub).xpath((//a[contains(@class,'social-count')])[2]/text())
 ```
 ### 3. Fork
-URL: `https://www.github.com/${USERNAME}/{REPO}`  
+URL: `https://www.github.com/${USERNAME}/${REPO}`  
 EXAMPLE URL: https://github.com/w3c/websub
 
 XPATH 
@@ -51,7 +51,7 @@ Oraclize Query
 html(https://github.com/w3c/websub).xpath(//*[@id='readme']//article/*/text())
 ```
 ### 5. README contains certain Text
-URL: `https://www.github.com/${USERNAME}/{REPO}`  
+URL: `https://www.github.com/${USERNAME}/${REPO}`  
 EXAMPLE URL: https://github.com/w3c/websub
 
 XPATH 
