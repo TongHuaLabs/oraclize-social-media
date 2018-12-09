@@ -1,9 +1,9 @@
 # Instagram XPath and Oraclize Queries
 
 
-### User
+## User
 
-1. Followers Count  
+### 1. Followers Count  
 
 URL: `https://instagram.com/${USERNAME}`  
 EXAMPLE URL: https://instagram.com/tatakatat
@@ -16,7 +16,7 @@ Oraclize Query
 ```
 html(https://instagram.com/tatakatat).xpath(substring-before(substring-after(//body//script[contains(@type,'text/javascript')][1],'edge_followed_by":{"count":'),'},"followed_by_viewer'))
 ```
-2. Follow Count  
+### 2. Follow Count  
 
 URL: `https://instagram.com/${USERNAME}`  
 EXAMPLE URL: https://instagram.com/tatakatat  
