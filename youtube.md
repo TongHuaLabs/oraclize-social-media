@@ -1,34 +1,5 @@
 # Youtube XPath and Oraclize Queries
 
-## Channel
-
-### 1. Followers Count  
-
-URL: `https://instagram.com/${USERNAME}`  
-EXAMPLE URL: https://instagram.com/tatakatat
-  
-XPATH
-```
-substring-before(substring-after(//body//script[contains(@type,'text/javascript')][1],'edge_followed_by":{"count":'),'},"followed_by_viewer')
-```
-Oraclize Query
-```
-html(https://instagram.com/tatakatat).xpath(substring-before(substring-after(//body//script[contains(@type,'text/javascript')][1],'edge_followed_by":{"count":'),'},"followed_by_viewer'))
-```
-### 2. Follow Count  
-
-URL: `https://instagram.com/${USERNAME}`  
-EXAMPLE URL: https://instagram.com/tatakatat  
-
-XPATH
-```
-substring-before(substring-after(//body//script[contains(@type,'text/javascript')][1],'edge_follow":{"count":'),'},"follows_viewer')
-```
-Oraclize Query
-```
-html(https://instagram.com/tatakatat).xpath(substring-before(substring-after(//body//script[contains(@type,'text/javascript')][1],'edge_follow":{"count":'),'},"follows_viewer'))
-```
-
 ## Video
 
 ### 1. View Count
